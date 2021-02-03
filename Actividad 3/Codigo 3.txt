@@ -1,0 +1,133 @@
+﻿\documentclass[12pt]{article}
+\usepackage[a4paper]{geometry}
+%\userpackage[top=1 in, bottom=1.25 in, left=1.1 in, rigth=1.1 in] {geometry}
+%\usepackage[paperwidth=17cm, paperheight=22.5cm, bottom=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+%\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.2cm, right=2.2cm]
+%{geometry}
+%\usepackage[myheadings]{fullpage}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+%\usepackage{float}
+\usepackage{graphicx, wrapfig, subcaption, setspace, booktabs}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage[font=small, labelfont=bf]{caption}
+%\usepackage{fourier}
+\usepackage[protrusion=true, expansion=true]{microtype}
+\usepackage[english]{babel}
+\usepackage{sectsty}
+\usepackage{url, lipsum}
+\usepackage[T1]{fontenc}
+\usepackage{icomma}
+\usepackage{siunitx}
+\usepackage{ragged2e}
+\usepackage{amsmath}
+\usepackage{comment}
+\usepackage{enumerate}
+%\usepackage{changepage}
+\usepackage{anysize}
+
+
+
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\onehalfspacing
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+%-------------------------------------------------------------------------------
+% HEADER & FOOTER
+%-------------------------------------------------------------------------------
+
+
+\begin{comment}
+-Udledninger
+$$
+\begin{aligned}
+\end{aligned}
+$$
+
+-Opgavetekst
+\begin{figure}[H]
+\includegraphics[width=0.5\textwidth]{"path"}
+\end{figure} 
+
+
+-Opgave billede med tekst
+\begin{figure}[H]
+\caption{"Billedtekst"}
+\includegraphics[width=0.5\textwidth]{"path"}
+\end{figure} 
+
+-Værdier
+$\\
+$
+
+
+\end{comment}
+\begin{document}
+
+\begin{titlepage}
+
+\title{ \normalsize 
+		%\begin{figure}
+        \begin{center}
+        \includegraphics[height=6cm]{Logo.jpg}
+        \end{center}
+       % \end{figure}
+        \LARGE \textsc{\textbf{Universidad de Sonora}} \\ \bigskip
+		\Large División de Ciencias Exactas y Naturales \\
+        Licenciatura en física \\ \bigskip
+        \bigskip
+        Física computacional I
+		\\ [0.1cm]  
+		\HRule{2pt} \\
+		\Large \textbf{{Actividad 3}} \\
+        \textit{\textbf{"Introducción a Pandas"}}
+		\HRule{2pt} \\
+		\normalsize \vspace*{0.001\baselineskip}}
+        
+\date{\bigskip \Large  \hspace*{\fill} Hermosillo, Sonora a enero 29 de 2021}
+
+        
+\author{
+		\Large\textbf{ Ismael Espinoza Arias} \\ \bigskip
+        \\ \bigskip
+       \Large Profesor Carlos Lizárraga Celaya}
+       \end{titlepage}
+       \maketitle
+       
+
+\newpage
+\pagestyle{plain}
+\section{Introducción}
+ Esta actividad consistió en utilizar la librería pandas, con la finalidad de tener una mejor interpretación de los datos que usamos, que en nuestro caso son los de la climatología. El uso de esta librería tiene una gran importancia ya que tiene funciones como las que se realizo en la actividad. Cabe destacar que pandas, como lo son todas las acciones relacionadas con los datos. 
+	
+\section{Biblioteca pandas}
+Pandas es una librería especial para el análisis de datos, que cuenta con estructuras tanto básicas como avanzadas para poder trabajar con los datos, manejarlos de la forma que mejor nos convenga o saber como utilizarlos. De aquí surge lo que conocemos como, DataFrame, que no es nada más que una colección ordenada de columnas de nombres y tipos, parecido a lo que conocemos como una tabla de datos. Cabe señalar aquí que los elementos en distintas columnas pueden ser de otro tipo de datos..\\
+
+
+\section{Apéndice}
+\begin{enumerate}
+\item \textbf{¿Qué te pareció?}\\
+\textit{Me pareció una actividad comprometedora ya que se veía que iba terminar con una gran experiencia al final de estas actividades.}
+
+\item \textbf{¿Cómo estuvo estuvo la carga de trabajo?} \\
+\textit{Estuvo algo pesada, pero el docente siempre estuvo al pendiente cualquier duda y todo el trabajo salió a consideración.}
+
+\item \textbf{¿Qué se te dificultó más?}\\
+\textit{El hecho de usar la librería y tener dificultades en como es que aplicaba las graficas y los enlaces externos para poder leerlos, pero fuera de eso todo muy bien..}
+
+\item \textbf{¿Qué te aburrió?}\\
+\textit{Nada en concreto, todo creo que fue de suma importancia y que en todo momento todo fue muy activo y dinámico.}
+
+\item \textbf{¿Qué recomendarías para mejorar la primera Actividad?? }\\
+\textit{Que la actividad se fuera abriendo desde el principio de la semana, así el mismo día podría el alumno tratar de ingresar a ella y así tendrían mas días para dudas y consejos del profesor.}
+
+\item \textbf{¿Qué grado de complejidad le asignarías a esta Actividad? (¿Bajo, Intermedio, ¿Avanzado?} \\
+\textit{Al principio, la mire avanzada pero con el paso de la misma me fui inclinando a intermedio, es por eso que yo diría que hasta el momento la dificultad es media.}
+
+\end{enumerate}
+
+\end{document}
