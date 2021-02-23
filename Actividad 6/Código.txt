@@ -1,0 +1,149 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper]{geometry}
+%\userpackage[top=1 in, bottom=1.25 in, left=1.1 in, rigth=1.1 in] {geometry}
+%\usepackage[paperwidth=17cm, paperheight=22.5cm, bottom=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+%\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.2cm, right=2.2cm]
+%{geometry}
+%\usepackage[myheadings]{fullpage}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+%\usepackage{float}
+\usepackage{graphicx, wrapfig, subcaption, setspace, booktabs}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage[font=small, labelfont=bf]{caption}
+%\usepackage{fourier}
+\usepackage[protrusion=true, expansion=true]{microtype}
+\usepackage[english]{babel}
+\usepackage{sectsty}
+\usepackage{url, lipsum}
+\usepackage[T1]{fontenc}
+\usepackage{icomma}
+\usepackage{siunitx}
+\usepackage{ragged2e}
+\usepackage{amsmath}
+\usepackage{comment}
+\usepackage{enumerate}
+%\usepackage{changepage}
+\usepackage{anysize}
+
+
+
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\onehalfspacing
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+%-------------------------------------------------------------------------------
+% HEADER & FOOTER
+%-------------------------------------------------------------------------------
+
+
+\begin{comment}
+-Udledninger
+$$
+\begin{aligned}
+\end{aligned}
+$$
+
+-Opgavetekst
+\begin{figure}[H]
+\includegraphics[width=0.5\textwidth]{"path"}
+\end{figure} 
+
+
+-Opgave billede med tekst
+\begin{figure}[H]
+\caption{"Billedtekst"}
+\includegraphics[width=0.5\textwidth]{"path"}
+\end{figure} 
+
+-Værdier
+$\\
+$
+
+
+\end{comment}
+\begin{document}
+
+\begin{titlepage}
+
+\title{ \normalsize 
+		%\begin{figure}
+        \begin{center}
+        \includegraphics[height=6cm]{Logo.jpg}
+        \end{center}
+       % \end{figure}
+        \LARGE \textsc{\textbf{Universidad De Sonora}} \\ \bigskip
+		\Large División de Ciencias Exactas y Naturales \\
+        Licenciatura En Física \\ \bigskip
+        \bigskip
+        Física Computacional I
+		\\ [0.1cm]  
+		\HRule{2pt} \\
+		\Large \textbf{{Actividad 6}} \\
+        \textit{\textbf{"Pronóstico de Series de Tiempo."}}
+		\HRule{2pt} \\
+		\normalsize \vspace*{0.001\baselineskip}}
+        
+\date{\bigskip \Large  \hspace*{\fill} Hermosillo, Sonora a febrero 19 de 2021}
+
+        
+\author{
+		\Large\textbf{ Ismael Espinoza Arias} \\ \bigskip
+        \\ \bigskip
+       \Large Profesor Carlos Lizárraga Celaya}
+       \end{titlepage}
+       \maketitle
+       
+
+\newpage
+\pagestyle{plain}
+\section{Introducción}
+ Una serie de tiempo es una lista de fechas, cada una de las cuales se asocia a un valor (un número). Las series de tiempo son un modo estructurado de representar datos. Visualmente, es una curva que evoluciona a lo largo del tiempo. Por ejemplo, las ventas diarias de un producto pueden representarse como una serie de tiempo. En el sector minorista o en el de manufactura, las series de tiempo son importantes porque son las representaciones más canónicas del flujo de artículos vendido o producido. La representación de datos comerciales como series de tiempo generalmente ayuda a los encargados a visualizar la actividad de sus comercios.
+
+\section{Desarrollo}
+El pronóstico de las series de tiempo significa que extendemos los valores históricos al futuro, donde aún no hay mediciones disponibles. El pronóstico se realiza generalmente para optimizar áreas como los niveles de inventario, la capacidad de producción o los niveles de personal.
+
+Existen dos variables estructurales principales que definen un pronóstico de serie de tiempo:
+
+\begin{itemize}
+\item El período, que representa el nivel de agregación. Los períodos más comunes son meses, semanas y días en la cadena de suministro (para la optimización del inventario). Los centros de atención telefónica utilizan períodos de cuartos de hora (para la optimización del personal).
+
+\item El horizonte, que representa la cantidad de períodos por adelantado que deben ser pronosticados. En la cadena de suministro, el horizonte es generalmente igual o mayor que el tiempo de entrega.
+\end{itemize}
+
+Luego, existen algunas sutilezas relacionadas con la definición del período mismo, principalmente debido a irregularidades del calendario. Por ejemplo, uno puede decidir que la agregación mensual comienza el día N de cada mes (en lugar del 1.º), pero si N es mayor que 28, causa problemas porque no todos los meses tienen más de 28 días.
+
+\section{Comentarios}
+El estudio de series de tiempo tiene como objetivo central desarrollar modelos estadísticos que expliquen el comportamiento de una variable aleatoria que varía con el tiempo, o con la distancia, o según un índice; y que permiten estimar pronósticos futuros de dicha variable aleatoria. Por ello, el manejo de las Series de Tiempo es de vital importancia en planeación y en áreas del conocimiento donde evaluar el efecto de una política basada sobre una variable, o conocer predicciones de sus valores futuros, aportan criterios que disminuyen el riesgo en la toma de decisiones o en la implementación de políticas futuras.
+
+\section{Conclusión}
+Las series de tiempo y en especial los modelos Autorregresivos e Integrados con Promedios Móviles (ARIMA), resultan realmente apropiados para modelar el tráfico moderno con características de correlación fuertes en la modelación del tráfico. Este hecho presenta unas implicaciones importantes de cara a la obtención de estimaciones del retardo medio con niveles de confianza y márgenes de error aceptables, pues los métodos habituales basados en la suposición de que la agregación destruye la estructura de correlación (como el método de Poisson) no funcionan cuando existe correlación a largo plazo, característica presente en la serie.
+Ahora los comentarios con respecto a la actividad, podemos ver que las temperaturas se comportan de alta forma ya que los datos anteriores así se ajustaban y seria normal o sería lógico pensar que este comportamiento se repetiría en futuras circunstancias.
+
+\section{Apéndice}
+\begin{enumerate}
+\item \textbf{¿Qué te pareció el tema de Análisis de Series de Datos?}\\
+\textit{Me pareció muy bien la actividad, ya que como en un futuro me gustaría enfocarme en la ciencia de datos, esta actividad se relaciona mucho con ello, es por eso le pongo mucha atención y hago todo lo posible por aprender acerca de estos temas..}
+
+\item \textbf{¿Cómo estuvo el reto?}\\
+\textit{Estuvo algo difícil, ya que no pude compilar en ciertas ocasiones y fue muy difícil encontrar el error, peor al final todo salió bien y me gusto la actividad.}
+
+\item \textbf{¿ ¿Qué se te dificultó más??} \\
+\textit{El poder ajustar mis datos para el caso de Guámuchil, ya que elegí una estación con muy pocos datos, solamente eso.}
+
+\item \textbf{¿Qué te aburrió?}\\
+\textit{Nada en concreto, todo creo que fue de suma importancia y que en todo momento todo fue muy activo y dinámico.}
+
+\item \textbf{¿Qué recomendarías para mejorar la primera Actividad?? }\\
+\textit{Nada en especial, ya que me gusto mucho como esta implementada esta actividad, pero si vieran un poco más a fondo la ciencia de datos, sería mejor para mí.}
+
+\item \textbf{¿Que grado de complejidad le asignarías a esta Actividad? (Bajo, Intermedio, Avanzado)} \\
+\textit{Le asignaría un mediano, porque todavía no consideró que la actividad sea demasiado difícil como para que se vuelva intensivo el ejercicio, pero no es lo más fácil del mundo ya que debemos de mover los datos y ajustarlos a nuestro modelo.}
+
+\end{enumerate}
+
+\end{document}
