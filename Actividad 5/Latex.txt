@@ -1,0 +1,137 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper]{geometry}
+%\userpackage[top=1 in, bottom=1.25 in, left=1.1 in, rigth=1.1 in] {geometry}
+%\usepackage[paperwidth=17cm, paperheight=22.5cm, bottom=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+%\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.2cm, right=2.2cm]
+%{geometry}
+%\usepackage[myheadings]{fullpage}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+%\usepackage{float}
+\usepackage{graphicx, wrapfig, subcaption, setspace, booktabs}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage[font=small, labelfont=bf]{caption}
+%\usepackage{fourier}
+\usepackage[protrusion=true, expansion=true]{microtype}
+\usepackage[english]{babel}
+\usepackage{sectsty}
+\usepackage{url, lipsum}
+\usepackage[T1]{fontenc}
+\usepackage{icomma}
+\usepackage{siunitx}
+\usepackage{ragged2e}
+\usepackage{amsmath}
+\usepackage{comment}
+\usepackage{enumerate}
+%\usepackage{changepage}
+\usepackage{anysize}
+
+
+
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\onehalfspacing
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+%-------------------------------------------------------------------------------
+% HEADER & FOOTER
+%-------------------------------------------------------------------------------
+
+
+\begin{comment}
+-Udledninger
+$$
+\begin{aligned}
+\end{aligned}
+$$
+
+-Opgavetekst
+\begin{figure}[H]
+\includegraphics[width=0.5\textwidth]{"path"}
+\end{figure} 
+
+
+-Opgave billede med tekst
+\begin{figure}[H]
+\caption{"Billedtekst"}
+\includegraphics[width=0.5\textwidth]{"path"}
+\end{figure} 
+
+-Værdier
+$\\
+$
+
+
+\end{comment}
+\begin{document}
+
+\begin{titlepage}
+
+\title{ \normalsize 
+		%\begin{figure}
+        \begin{center}
+        \includegraphics[height=6cm]{Logo.jpg}
+        \end{center}
+       % \end{figure}
+        \LARGE \textsc{\textbf{Universidad De Sonora}} \\ \bigskip
+		\Large División de Ciencias Exactas y Naturales \\
+        Licenciatura En Física \\ \bigskip
+        \bigskip
+        Física Computacional I
+		\\ [0.1cm]  
+		\HRule{2pt} \\
+		\Large \textbf{{Actividad 5}} \\
+        \textit{\textbf{"Análisis de Series de Tiempo con Pandas"}}
+		\HRule{2pt} \\
+		\normalsize \vspace*{0.001\baselineskip}}
+        
+\date{\bigskip \Large  \hspace*{\fill} Hermosillo, Sonora a febrero 12 de 2021}
+
+        
+\author{
+		\Large\textbf{ Ismael Espinoza Arias} \\ \bigskip
+        \\ \bigskip
+       \Large Profesor Carlos Lizárraga Celaya}
+       \end{titlepage}
+       \maketitle
+       
+
+\newpage
+\pagestyle{plain}
+\section{Introducción}
+ En esta actividad iniciamos en el análisis de series de tiempo con Python, donde exploramos nuestros datos elegidos anteriormente, ya sea de precipitación, temperatura máxima y mínima y la evaporación. También exploramos a gran escala la forma en que vemos los datos y los manejamos. Analizando variable por variable y viendo como se comporta con respecto a la gráfica realizada.
+
+
+\section{Desarrollo}
+Para la realización de esta actividad, fue necesaria la asesoría del profesor y revisar el contenido abiertamente, para poder llegar a la utilización de los datos de la manera que se esperaba, ya que como pudimos ver que los datos que manejamos ya tienen incluidos sus gráficas de con respecto a sus datos, y gracias a ello pudimos darnos una idea de cómo es que las nuestras iban a salir o como es que se debían de comportar al momento de ser del mismo estilo. También hay que agregar que fue necesarios el asesoramiento del profesor para poder llegar a los resultados deseados.
+
+\section{Conclusión}
+Como conclusión, podemos decir que en esta actividad se vio profundamente el uso de nuevas librerías que nos ayudaron a hacer unas mejores gráficas, o al menos graficas alternativas que nos ayudan a interpretar o manejar los datos de diferentes maneras según sea el caso, es por eso que me gustó mucho esta actividad porque se relaciona con la ciencia de datos, rama que en un futuro pienso enfocarme para poder concluir mis estudios. Como también hay que establecer que nos enfocamos en el análisis de los datos e interpretamos sus resultados y llegamos a la manipulación del código para poder llegar a los resultados obtenidos.
+
+
+\section{Apéndice}
+\begin{enumerate}
+\item \textbf{¿Qué te pareció el tema de Análisis Exploratorio de Datos?}\\
+\textit{Me pareció muy bien la actividad, ya que como en un futuro me gustaría enfocarme en la ciencia de datos, esta actividad se relaciona mucho con ello.}
+
+\item \textbf{¿Cómo estuvo el reto?}\\
+\textit{Estuvo algo difícil, ya que no pude compilar en ciertas ocasiones y fue muy difícil encontrar el error, peor al final todo salió bien y me gusto la actividad.}
+
+\item \textbf{¿ ¿Qué se te dificultó más??} \\
+\textit{El poder ajustar mis datos para el caso de Guámuchil, ya que elegí una estación con muy pocos datos.}
+
+\item \textbf{¿Qué te aburrió?}\\
+\textit{Nada en concreto, todo creo que fue de suma importancia y que en todo momento todo fue muy activo y dinámico.}
+
+\item \textbf{¿Qué recomendarías para mejorar la primera Actividad?? }\\
+\textit{Nada en especial, ya que me gusto mucho como esta implementada esta actividad, pero si vieran un poco más a fondo la ciencia de datos, sería mejor para mí .}
+
+\item \textbf{¿Que grado de complejidad le asignarías a esta Actividad? (Bajo, Intermedio, Avanzado)} \\
+\textit{Le asignaría un mediano, porque todavía no consideró que la actividad sea demasiado difícil como para que se vuelva intensivo el ejercicio, pero no es lo más fácil del mundo ya que debemos de mover los datos y ajustarlos a nuestro modelo.}
+
+\end{enumerate}
+
+\end{document}
